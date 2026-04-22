@@ -96,7 +96,7 @@ export default function Home() {
               transition={{ duration: 0.55, ease: [0.16, 1, 0.3, 1] }}
               className="max-w-2xl text-base leading-relaxed text-sub sm:text-lg"
             >
-              CS student at Mahindra University (CGPA 9.49). I enjoy building useful products,
+              CS student at Mahindra University. I enjoy building useful products,
               from AI-driven tools to full-stack apps that solve real problems.
             </motion.p>
 
@@ -164,10 +164,6 @@ export default function Home() {
               className="relative z-10 h-64 w-64 rounded-2xl object-cover transition-all duration-500 hover:grayscale-0"
               style={{ filter: 'grayscale(30%) contrast(1.05)' }}
             />
-            <div className="absolute -bottom-4 -right-4 z-20 rounded-xl border border-border bg-surface px-4 py-2 shadow-glow">
-              <p className="font-mono text-xl font-medium text-accent">9.49</p>
-              <p className="text-[11px] uppercase tracking-wide text-sub">CGPA</p>
-            </div>
           </motion.div>
         </div>
 

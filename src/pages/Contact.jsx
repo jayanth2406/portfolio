@@ -150,9 +150,6 @@ export default function Contact() {
                 <span className="text-text">Year:</span> {personal.year}
               </p>
               <p>
-                <span className="text-text">CGPA:</span> {personal.cgpa}
-              </p>
-              <p>
                 <span className="text-text">Roll No.:</span> {personal.rollNo}
               </p>
             </div>

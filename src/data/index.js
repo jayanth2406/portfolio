@@ -21,7 +21,7 @@ export const projects = [
       'A conversational movie discovery app that uses SentenceTransformers and FAISS for semantic search, blends metadata filters like genre and year, and keeps context across turns in a simple Gradio interface.',
     tags: ['Python', 'FAISS', 'RAG', 'SentenceTransformers', 'Gradio', 'SQLite', 'LLM'],
     github: 'https://github.com/jayanth2406/MovieMate-conversational-AI',
-    year: '2025',
+    year: '2026',
     status: 'Complete',
     icon: '🎬',
     accentColor: '#f43f5e',
