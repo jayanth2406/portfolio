@@ -91,16 +91,6 @@ export default function Navbar() {
           ))}
         </div>
 
-        <div className="hidden md:block">
-          <a
-            href="/Jayanth_Resume.pdf"
-            download
-            className="rounded-full bg-accent px-5 py-2 text-sm font-semibold text-bg transition-colors hover:bg-accent-dim"
-          >
-            Resume
-          </a>
-        </div>
-
         <button
           type="button"
           onClick={() => setIsOpen((prev) => !prev)}
@@ -138,13 +128,6 @@ export default function Navbar() {
                   {item.label}
                 </NavLink>
               ))}
-              <a
-                href="/Jayanth_Resume.pdf"
-                download
-                className="mt-1 rounded-xl bg-accent px-4 py-3 text-center text-sm font-semibold text-bg transition-colors hover:bg-accent-dim"
-              >
-                Download Resume
-              </a>
             </div>
           </motion.div>
         )}

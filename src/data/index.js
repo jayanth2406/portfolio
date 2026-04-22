@@ -4,7 +4,7 @@ export const projects = [
     title: 'Polaris',
     subtitle: 'AI Coding Agent',
     description:
-      'A full-stack AI coding assistant integrating LLM APIs with real-time frontend interaction. Features session persistence, backend prompt engineering, and a seamless developer experience built for productivity.',
+      'A coding assistant that combines LLM APIs with a fast web interface. It supports persistent sessions, clean prompt workflows, and a practical developer experience focused on daily productivity.',
     tags: ['React', 'Node.js', 'LLM APIs', 'Full-Stack', 'Prompt Engineering'],
     github: 'https://github.com/jayanth2406/polaris',
     year: '2026',
@@ -18,7 +18,7 @@ export const projects = [
     title: 'MovieMate',
     subtitle: 'Conversational Movie AI',
     description:
-      'Conversational AI system for intelligent movie discovery. Combines SentenceTransformer embeddings, FAISS vector similarity search, hybrid metadata filters (genre, actor, year), LLM prompt engineering, and turn-by-turn memory. Features a Gradio web UI and SQLite movie database.',
+      'A conversational movie discovery app that uses SentenceTransformers and FAISS for semantic search, blends metadata filters like genre and year, and keeps context across turns in a simple Gradio interface.',
     tags: ['Python', 'FAISS', 'RAG', 'SentenceTransformers', 'Gradio', 'SQLite', 'LLM'],
     github: 'https://github.com/jayanth2406/MovieMate-conversational-AI',
     year: '2025',
@@ -32,7 +32,7 @@ export const projects = [
     title: 'Digital Contagion Simulator',
     subtitle: 'Agent-Based Stress Propagation',
     description:
-      'Python-based agent simulation modeling how stress propagates through social networks. Analyzes intervention strategies and network dynamics to understand emotional contagion patterns in student environments using graph-based modeling.',
+      'An agent-based Python simulation that studies how stress spreads in social networks, and tests intervention strategies to better understand emotional contagion in student environments.',
     tags: ['Python', 'Agent-Based Modeling', 'Network Analysis', 'Simulation'],
     github: 'https://github.com/amitverma-cf/sc-digital-contagion-simulator',
     year: '2025',
@@ -46,19 +46,19 @@ export const projects = [
 export const skills = [
   {
     category: 'Languages',
-    items: ['Python', 'C / C++', 'JavaScript', 'Java', 'HTML / CSS'],
+    items: ['Python', 'C / C++', 'JavaScript', 'TypeScript', 'Java'],
   },
   {
-    category: 'AI & ML',
-    items: ['LLM APIs', 'RAG Systems', 'FAISS', 'SentenceTransformers', 'NLP', 'Embeddings'],
+    category: 'Frontend',
+    items: ['React', 'Next.js', 'HTML / CSS', 'Figma'],
   },
   {
-    category: 'Web & Tools',
-    items: ['React', 'Node.js', 'Convex', 'REST APIs', 'Git', 'Gradio'],
+    category: 'Backend & Data',
+    items: ['Node.js', 'Convex', 'REST APIs', 'SQLite', 'Git'],
   },
   {
-    category: 'Concepts',
-    items: ['Data Structures', 'OOP', 'Machine Learning', 'Agent-Based Modeling'],
+    category: 'AI Engineering',
+    items: ['LLM APIs', 'RAG Pipelines', 'Prompt Engineering', 'Vector Search'],
   },
 ]
 
@@ -80,3 +80,5 @@ export const personal = {
   primaryEmail: 'jryerabolu@gmail.com',
   universityEmail: 'se23ucse080@mahindrauniversity.edu.in',
 }
+
+export const profileImagePath = `${import.meta.env.BASE_URL}img/jayanth.png`

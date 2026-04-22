@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { Mail, MapPin } from 'lucide-react'
-import { personal } from '../data'
+import { personal, profileImagePath } from '../data'
 
 const interests = [
   {
@@ -62,12 +62,11 @@ export default function About() {
           </p>
           <p>
             My journey started with C and C++ fundamentals, then expanded into JavaScript and
-            modern web development, eventually pulling me into AI and ML systems design.
+            modern web development, and later into machine learning and applied AI projects.
           </p>
           <p>
-            I enjoy building practical projects such as MovieMate (RAG, FAISS, LLM workflow),
-            Polaris (an AI coding agent), and a digital stress contagion simulator for network-based
-            research.
+            I enjoy building practical projects such as MovieMate (semantic search for movie
+            discovery), Polaris (a coding assistant), and a digital stress contagion simulator.
           </p>
           <p>
             Outside coding, volleyball and chess keep me balanced. Both involve thinking several
@@ -76,17 +75,10 @@ export default function About() {
 
           <div className="flex flex-wrap gap-3 pt-2">
             <a
-              href="/Jayanth_Resume.pdf"
-              download
-              className="rounded-full bg-accent px-5 py-3 text-sm font-semibold text-bg transition-colors hover:bg-accent-dim"
-            >
-              Download Resume ↓
-            </a>
-            <a
               href={`mailto:${personal.primaryEmail}`}
               target="_blank"
               rel="noreferrer"
-              className="rounded-full border border-border px-5 py-3 text-sm font-semibold text-text transition-colors hover:border-muted hover:text-accent"
+              className="rounded-full bg-accent px-5 py-3 text-sm font-semibold text-bg transition-colors hover:bg-accent-dim"
             >
               Send Email →
             </a>
@@ -103,7 +95,7 @@ export default function About() {
           <div className="absolute inset-0 scale-105 rounded-2xl border border-accent/20" />
           <div className="absolute inset-0 scale-110 rounded-2xl border border-border opacity-50" />
           <img
-            src="/img/jayanth.png"
+            src={profileImagePath}
             alt="Jayanth portrait"
             className="relative z-10 h-72 w-72 rounded-2xl object-cover transition-all duration-500 hover:grayscale-0"
             style={{ filter: 'grayscale(30%) contrast(1.05)' }}

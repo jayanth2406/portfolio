@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import { ArrowRight, ArrowUpRight, GitBranch, Mail } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import ProjectCard from '../components/ProjectCard'
-import { personal, projects, skills, social } from '../data'
+import { profileImagePath, projects, skills, social } from '../data'
 
 const roles = ['AI Engineer', 'Full-Stack Dev', 'ML Builder', 'CS Student']
 
@@ -96,8 +96,8 @@ export default function Home() {
               transition={{ duration: 0.55, ease: [0.16, 1, 0.3, 1] }}
               className="max-w-2xl text-base leading-relaxed text-sub sm:text-lg"
             >
-              CS student at Mahindra University (CGPA 9.49). I build intelligent tools from RAG
-              pipelines and AI agents to full-stack applications that actually solve problems.
+              CS student at Mahindra University (CGPA 9.49). I enjoy building useful products,
+              from AI-driven tools to full-stack apps that solve real problems.
             </motion.p>
 
             <motion.div
@@ -112,13 +112,6 @@ export default function Home() {
                 View Projects
                 <ArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" />
               </Link>
-              <a
-                href="/Jayanth_Resume.pdf"
-                download
-                className="inline-flex items-center rounded-full border border-border px-5 py-3 text-sm font-semibold text-text transition-colors hover:border-muted hover:text-accent"
-              >
-                Resume
-              </a>
             </motion.div>
 
             <motion.div
@@ -166,7 +159,7 @@ export default function Home() {
             <div className="absolute inset-0 scale-105 rounded-2xl border border-accent/20" />
             <div className="absolute inset-0 scale-110 rounded-2xl border border-border opacity-50" />
             <img
-              src="/img/jayanth.png"
+              src={profileImagePath}
               alt="Jayanth Reddy"
               className="relative z-10 h-64 w-64 rounded-2xl object-cover transition-all duration-500 hover:grayscale-0"
               style={{ filter: 'grayscale(30%) contrast(1.05)' }}
@@ -188,7 +181,7 @@ export default function Home() {
 
       <section className="py-24">
         <p className="font-mono text-sm text-accent">01 - Skills</p>
-        <h2 className="mt-2 text-3xl font-bold text-text">What I work with</h2>
+        <h2 className="mt-2 text-3xl font-bold text-text">What I do</h2>
 
         <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {skills.map((group, index) => (
@@ -264,25 +257,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="pb-10">
-        <div className="rounded-2xl border border-border bg-surface p-6">
-          <h3 className="text-lg font-bold text-text">Personal Details</h3>
-          <div className="mt-4 grid gap-3 text-sm text-sub sm:grid-cols-2">
-            <p>
-              <span className="font-medium text-text">Name:</span> {personal.name}
-            </p>
-            <p>
-              <span className="font-medium text-text">Phone:</span> {personal.phone}
-            </p>
-            <p>
-              <span className="font-medium text-text">Email:</span> {personal.primaryEmail}
-            </p>
-            <p>
-              <span className="font-medium text-text">College Email:</span> {personal.universityEmail}
-            </p>
-          </div>
-        </div>
-      </section>
     </div>
   )
 }
